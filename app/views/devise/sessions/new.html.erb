@@ -1,17 +1,70 @@
-<h2>Log in</h2>
 
-<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+<body class="signup-body">
 
-  <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
-  <% end -%>
+<div id="signup-container">
 
-  <div><%= f.submit "Sign in" %></div>
+	<div id="signup-content-container">
+	
+		<div id="signup-logo">
+			<%= image_tag("logo-icon.png") %>
+		
+		</div>
+		
+		<div id="signup-copy">
+			<h2>Login to your PixilSnap account</h2>
+			
+		</div>
+	
+		<div id="signup-box">
+		
+			<div id="signup-facebook">
+			<%= image_tag("facebook-signup.png") %>
+				
+			</div>	
+		or
+			<div id="signup-fields">
+			
+				<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+				<form name="signup-form">
+				
+					<fieldset>	
+				        <div>
+					        <%= f.label :email %><br />
+					  		<%= f.email_field :email, :autofocus => true %>
+				  		</div>
+
+						<div>
+							<%= f.label :password %><br />
+							<%= f.password_field :password %>
+						</div>
+        				
+        				<button type="submit">Login to my account</button>
+
+					</fieldset>
+				
+				</form>
+
+			</div>
+			
+			<div id="remember-me" class="small">
+				<% if devise_mapping.rememberable? -%>
+		    	<div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+		  	<% end -%>
+			</div>
+			
+			<div id="forgot-password" class="small">
+				<%= link_to "forgot password?", new_password_path(resource_name) %>
+			
+			</div>
+		
+		</div>
+		
+			<div class="no-account medium">Don't have an account yet? <%= link_to "Sign up for one.", new_registration_path(resource_name) %></div>
+	
+	</div>
+
+</div>
 <% end %>
+</body>
 
-<%= render "devise/shared/links" %>

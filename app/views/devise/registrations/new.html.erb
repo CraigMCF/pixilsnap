@@ -1,18 +1,72 @@
-<h2>Sign up</h2>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<body class="signup-body">
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+<div id="signup-container">
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+	<div id="signup-content-container">
+	
+		<div id="signup-logo">
+			<%= image_tag("logo-icon.png") %>
+			
+		</div>
+		
+		<div id="signup-copy">
+			<h2>Get started with a PixilSnap account</h2>
+			<p>Sign up in 30 seconds. No credit card required. If you already have a PixilSnap account please log in.</p>
+		</div>
+	
+		<div id="signup-box">
+		
+			<div id="signup-facebook">
+				<%= image_tag("facebook-signup.png") %>
+				
+			</div>	
+		or
+			<div id="signup-fields">
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+				<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  				<%= devise_error_messages! %>
+			
+				<form name="signup-form">
+				
+					<fieldset>
+					
+						<div><%= f.label :email %><br />
+  						<%= f.email_field :email, :autofocus => true %></div>
+        
+        				<label for="username">Username</label>
+        <input id="username" type="username" >
+        
+        				<div><%= f.label :password %><br />
+  						<%= f.password_field :password %></div>
 
-  <div><%= f.submit "Sign up" %></div>
+  						<div><%= f.label :password_confirmation %><br />
+  						<%= f.password_field :password_confirmation %></div>
+        
+        				<button type="submit">Create my account</button>
+					
+					
+					</fieldset>
+				
+				</form>
+
+			</div>
+			
+			<div id="terms">
+			
+				<span class="legal small">
+				By clicking this button, you agree to PixilSnap's Anti-spam Policy & Terms of Use.
+				
+				</span>
+			
+			</div>
+		
+		</div>
+	
+	
+	</div>
+
+</div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+</body>
