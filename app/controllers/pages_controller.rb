@@ -2,6 +2,6 @@ class PagesController < ApplicationController
   def home
   end
 
-  def about
+  def userPage
   end
 end

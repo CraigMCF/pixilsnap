@@ -10,26 +10,45 @@
 			
 			
 			<div id="nav" class="medium">
-			
-				<div class="nav-item">
-					 <a href="#how">how does it work?</a>
-				</div>
 				
-				<div class="nav-item">
-					<a href="#pricing">pricing</a>
-				</div>
+					<div class="nav-item">
+						<a href="#">download extension</a>
+					</div>
+
+					<% if user_signed_in? %>
+
+					<div class="nav-item">
+						 <a href="#">account settings</a>
+					</div>
+
+					<div class="nav-item">
+						<%= link_to "log out", destroy_user_session_path, method: :delete %>
+					</div>
+
+					<div class="nav-item-signup">
+						 <%= link_to "upload a photo", new_user_registration_path, class: "signup" %>
+					</div>
+
+					<% else %>
+
+					<div class="nav-item">
+						 <a href="#how">how does it work?</a>
+					</div>
 				
-				<div class="nav-item">
-					<a href="#">download</a>
-				</div>
+					<div class="nav-item">
+						<a href="#pricing">pricing</a>
+					</div>
+
+					<div class="nav-item">
+						<%= link_to "log in", new_user_session_path %>
+					</div>
+
+					<div class="nav-item-signup">
+						 <%= link_to "sign up", new_user_registration_path, class: "signup" %>
+					</div>
+				<% end %>
+
 				
-				<div class="nav-item">
-					<a href="login.html">login</a>
-				</div>
-				
-				<div class="nav-item-signup">
-					<a href="signup.html" class="signup">sign up</a>
-				</div>
 			
 			</div>
 		
