@@ -1,3 +1,249 @@
-<h1>Welcome to my app!</h1>
-<p>Print your pictures!</p>
-<p><%= link_to "Learn more", "about" %></p>
+<div id="header-container">
+
+	<div id="header-content-container">
+	
+		<div id="header">
+	
+			<div id="logo">
+				<%= link_to(image_tag("logo.png"), root_path) %>
+			</div>
+			
+			
+			<div id="nav" class="medium">
+			
+				<div class="nav-item">
+					 <a href="#how">how does it work?</a>
+				</div>
+				
+				<div class="nav-item">
+					<a href="#pricing">pricing</a>
+				</div>
+				
+				<div class="nav-item">
+					<a href="#">download</a>
+				</div>
+				
+				<div class="nav-item">
+					<a href="login.html">login</a>
+				</div>
+				
+				<div class="nav-item-signup">
+					<a href="signup.html" class="signup">sign up</a>
+				</div>
+			
+			</div>
+		
+		</div>
+	
+	</div>
+
+</div>
+
+
+<div id="cta-container">
+
+	<div id="cta-content-container">
+	
+		<div id="blurb">
+			<h1 class="cta">Your photos delivered to your door each month</h1>
+			
+			<p class="cta-p">Pixilsnap is a browser plugin that allows you to choose the photos you want, on the fly, <span class="bold">from any website</span>, with the click of a button.</p>
+<p class="cta-p">At the end of each month, you’ll receive a <span class="bold">photo crate at your door</span> full of your monthly picks. <span class="bold">That’s it</span>.</p>
+
+		
+
+		</div>
+		
+		<div class="buttons">
+		
+			<a class="download-button" href="#"><span>Download the Chrome plugin</span></a>
+		
+		</div>	
+		
+		
+		<div id="feature-image">
+
+			<%= image_tag("screen.png") %>
+		
+		</div>
+	
+	</div>
+
+</div>
+
+
+<a name="how"></a>
+
+<div id="social-container">
+
+	<div id="social-content-container">
+		
+		<a href="http://www.twitter.com/pixilsnap" target="_blank"><%= image_tag("follow-twitter.png") %></a>
+		
+		<%= image_tag("follow-facebook.png") %>
+		
+	</div>
+
+</div>
+
+
+<div id="how-container">
+
+	<div id="how-content-container">
+	
+		
+		<h1>How does this all work?</h1>
+	
+		<div class="step">
+		
+			<div class="step-icon">
+			
+				<%= image_tag("account-circle.png") %>
+				
+			
+			</div>
+			
+			<div class="step-copy">
+			
+				<h2>Create an Account</h2>
+				
+				<p class="step-text medium">Get started by signing up and choosing an account type. Each type comes with a different number of photos each month.
+Sign me up!</p>
+			
+			</div>
+		
+		</div>
+		
+		<div class="step">
+		
+			<div class="step-icon">
+			
+				<%= image_tag("install-circle.png") %>
+				
+			
+			</div>
+			
+			<div class="step-copy">
+			
+				<h2>Install the Plugin</h2>
+				
+				<p class="step-text medium">After you’ve signed up, download the plugin for your browser type and install it. You will be prompted to login through your browser.<br />
+I’m in! Let’s go!</p>
+			
+			</div>
+		
+		</div>
+		
+		<div class="step">
+		
+			<div class="step-icon">
+			
+				<%= image_tag("circle-photos.png") %>
+			
+			
+			</div>
+			
+			<div class="step-copy">
+			
+				<h2>Choose your Photos</h2>
+				
+				<p class="step-text medium">You should see a small “snap” button in the upper right of all images when you mouse over them. Click it to add that photo to your crate.<br />
+I want to go to there!</p>
+			
+			</div>
+		
+		</div>
+		
+		<div class="step">
+		
+			<div class="step-icon">
+			
+				<%= image_tag("account-circle.png") %>
+				
+			
+			</div>
+			
+			<div class="step-copy">
+			
+				<h2>Check the Mail</h2>
+				
+				<p class="step-text medium">After the month is up, your photos are printed, packed and shipped to you! Keep an eye out for incoming photo crates!<br />
+YES! I’d like to join!</p>
+			
+			</div>
+		
+		</div>
+	
+	</div>
+
+</div>
+
+<a name="pricing"></a>
+
+<div id="pricing-container">
+
+	<div id="pricing-content-container">
+	
+		<div id="price-blurb">
+		
+			<h1 class="price">Pricing</h1>
+			
+			<p>I don’t know what you’ve heard, but printing and shipping photos ain’t free! BUT… that won’t stop us from making it cheap.<br />
+Choosing an account type is easy. The more money you pay us, the more pictures we send you. The end.</p>
+		
+		</div>
+		
+		<div id="plans">
+		
+		<div class="plan">
+		
+			<%= image_tag("pricing-basic.png") %>
+		
+		
+		</div>
+		
+		<div class="plan">
+		
+			<%= image_tag("pricing-standard.png") %>
+			
+		
+		</div>
+		
+		<div class="plan">
+		
+			<%= image_tag("pricing-large.png") %>
+		
+		
+		</div>
+		
+		</div>
+	
+	</div>
+
+</div>
+
+<div id="footer-container">
+
+	<div id="footer-content-container" class="small bold">
+	
+		<div id="footer-nav">
+		
+			<span class="footernav">HOW DOES IT WORK</span>
+			
+			<span class="footernav">PRICING</span>
+			
+			<span class="footernav">DOWNLOAD</span>
+			
+			<span class="footernav">LOGIN</span>
+			
+			<span class="footernav">SIGN UP</span>
+			
+			<br>
+			
+					
+		</div>
+	<span class="copyright">Copyright © 2013 Pixilsnap</span>
+
+	</div>
+
+</div>
