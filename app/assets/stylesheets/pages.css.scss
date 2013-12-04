@@ -1,3 +1,612 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* CSS Document */
+/* CSS RESET 
+
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/ 
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+body {
+    line-height: 1
+}
+ol, ul {
+    list-style: none
+}
+blockquote, q {
+    quotes: none
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* MY STYLES */
+
+/* *{margin:0; padding:0;} _NO__DOTCOMMA__AFTER__*/
+
+html, body {
+    text-align: center;
+    height: 100%;
+    font-family: 'bariol_regularregular', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3c3c3c;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+/* Font Styles */
+.regular {
+    font-size: 18px
+}
+.small {
+    font-size: 14px
+}
+.medium {
+    font-size: 16px
+}
+a {
+    text-decoration: none
+}
+.bold {
+    font-family: 'bariol_boldbold'
+}
+h1 {
+    font-family: 'bariol_boldbold';
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+h2 {
+    font-family: 'bariol_boldbold';
+    font-size: 21px;
+}
+
+
+
+/* Header Styles */
+#header-container {
+    background-color: rgba(255, 255, 255, 0.92);
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+  
+}
+#header-container {
+    background-color: rgba(255, 255, 255, 0.92);
+    min-height: 60px;
+    position: fixed;
+    width: 100%;
+}
+#header-content-container {
+    width: 960px;
+    margin: 0 auto;
+    height: 60px;
+}
+#logo {
+    padding-top: 13px;
+    float: left;
+}
+#nav {
+    float: right;
+    padding-top: 20px;
+}
+.nav-item {
+    float: left;
+    padding: 0 0px 0 30px;
+}
+.nav-item a {
+    color: #3c3c3c
+}
+.nav-item a:hover {
+    color: #757575
+}
+.nav-item-signup {
+    float: left;
+    padding: 0 0px 0 30px;
+}
+.nav-item-signup a {
+    color: white
+}
+.nav-item-signup a:hover {
+    color: white
+}
+.signup {
+    background-color: #e26868;
+    padding: 2px 7px 5px 7px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: white;
+}
+.signup a {
+    color: white
+}
+.signup:hover {
+    background-color: #be4b4b
+}
+
+
+
+/* CTA Styles */
+#cta-container {
+    background-color: #37a1e4;
+    margin-top: 60px;
+}
+#cta-content-container {
+    width: 960px;
+    margin: 0 auto;
+    color: white;
+    padding-top: 28px;
+}
+.cta {
+    font-family: 'bariol_boldbold';
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+.cta-p {
+    line-height: 24px
+}
+.buttons {
+    min-width: 300px;
+    padding-top: 15px;
+}
+.download-button {
+    background-color: white;
+    padding: 2px 18px 5px 18px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #3c3c3c;
+}
+.download-button span {
+    padding-left: 30px;
+    background: url(../images/chromelogo.png) no-repeat 0 2px;
+    font-family: 'bariol_boldbold';
+}
+#feature-image {
+    padding-top: 35px
+}
+
+
+
+/* Social Strip Styles */
+#social-container {
+    background-color: white
+}
+#social-content-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+
+
+/* How it Works Styles */
+#how-container {
+    background-color: white
+}
+#how-content-container {
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    display: inline-block;
+}
+.step {
+    width: 190px;
+    float: left;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.step-icon {
+    padding-bottom: 15px
+}
+.step-text {
+    padding-top: 5px
+}
+
+
+
+
+/* Pricing Styles */
+#pricing-container {
+    background-color: #ebebeb
+}
+#pricing-content-container {
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 35px;
+    display: inline-block;
+    padding-bottom: 35px;
+}
+.price {
+    padding-bottom: 25px
+}
+#pricing-content-container p {
+    line-height: 24px
+}
+.plan {
+    float: left;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 25px;
+}
+#plans {
+    padding-left: 110px
+}
+
+
+
+
+/* Footer Styles */
+#footer-container {
+    background-color: white
+}
+#footer-content-container {
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 35px;
+}
+#footer-nav {
+    height: 30px
+}
+.footernav {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.copyright {
+    font-family: 'bariol_regularregular';
+    color: gray;
+}
+#user-footer-container {
+    background-color: #37a1e4;
+    color: white;
+}
+#user-footer-content-container {
+    margin: 0 auto;
+    height: 80px;
+    padding-top: 25px;
+    width: 960px;
+}
+#footer-logo {
+    float: left
+}
+#user-footer-right {
+    float: right;
+    text-align: right;
+}
+.user-footer-nav {
+    height: 30px
+}
+.user-copyright {
+    color: white
+}
+
+
+
+/* Signup/Login Styles */
+.signup-body {
+    background-color: #37a1e4
+}
+#signup-content-container {
+    margin: 0 auto;
+    width: 360px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+#signup-content-container a {
+    color: #37a1e4
+}
+#signup-copy {
+    padding-top: 15px;
+    color: white;
+}
+#signup-copy h2 {
+    padding-bottom: 5px
+}
+#signup-box {
+    width: 315px;
+    background-color: white;
+    margin-top: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 20px;
+    display: inline-block;
+}
+#signup-fields {
+    width: 290px;
+    margin: 0 auto;
+}
+#signup-fields label {
+    font-size: 16px;
+    font-family: 'bariol_boldbold';
+    float: left;
+    display: block;
+}
+#signup-fields input {
+    float: left;
+    width: 280px;
+    display: block;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 25px;
+    border: 2px #cccccc solid;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+#signup-fields input:focus {
+    border: 2px #37a1e4 solid
+}
+#signup-fields button {
+    width: 290px;
+    height: 45px;
+    background-color: #37a1e4;
+    margin-top: 10px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'bariol_regularregular', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#signup-fields button:hover {
+    background-color: #1979b6
+}
+#terms {
+    padding-top: 10px
+}
+.legal {
+    color: #a4a4a4
+}
+#remember-me {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+#forgot-password {
+    float: right;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.no-account {
+    color: white;
+    padding-top: 15px;
+}
+.no-account a {
+    color: white !important
+}
+.no-account a:hover {
+    text-decoration: underline
+}
+
+
+
+
+/* Logged in user page styles */
+#userphotos-container {
+    background-color: #f2f2f2;
+    min-height: 500px;
+    border-top: 1px solid #cccccc;
+}
+#userphotos-content-container {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+#hello {
+    float: left;
+    text-align: left;
+    padding-top: 20px;
+}
+#account-status {
+    float: right;
+    font-weight: regular;
+}
+#photo-row {
+    display: inline-block;
+    padding-bottom: 25px;
+}
+.photo-box {
+    width: 275px;
+    height: 275px;
+    border: 1px solid #8f8f8f;
+    background-color: white;
+    box-shadow: 0px 0px 0px 3px #ccc;
+    float: left;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+.icon {
+    padding-right: 3px
+}
+.size {
+    float: left
+}
+.drop {
+    background: transparent;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+}
+.options {
+    float: right;
+    padding-right: 5px;
+    padding-top: 6px;
+}
+#month-selector {
+    clear: both;
+    text-align: left;
+    padding-left: 14px;
+    padding-top: 15px;
+}
+.drop-month {
+    background-color: #f2f2f2;
+    padding: 5px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+    font-family: 'bariol_regularregular', "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif;
+}
+#overlay {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: #37a1e4;
+    color: white;
+    border: 1px solid white;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -260px; /* Half the height */
+    margin-left: -155px; /* Half the width */
+    padding: 5px;
+    box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#overlay p {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.download-button-pop {
+    background-color: white;
+    padding: 2px 18px 5px 18px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #3c3c3c;
+    margin-top: 10px;
+    display: inline-block;
+}
+.download-button-pop span {
+    padding-left: 30px;
+    background: url(../images/chromelogo.png) no-repeat 0 2px;
+    font-family: 'bariol_boldbold';
+}
+.close {
+    width: 300px;
+    text-align: right;
+    float: right;
+    display: inline-block;
+}
+
+
+
+
+/* Browser Extension Styles */
+#main-content {
+    width: 275px;
+    margin: 0 auto;
+    padding: 15px 5px 5px 5px;
+    display: inline-block;
+}
+.top {
+    width: 275px;
+    display: block;
+    height: 45px;
+}
+.browser-logo {
+    float: left
+}
+.settings {
+    float: right
+}
+.user-greeting {
+    border-bottom: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.browser-account-status {
+    border-bottom: 1px solid #d7d7d7;
+    display: inline-block;
+    width: 275px;
+    padding: 5px 0 5px 0;
+}
+.remaining {
+    float: left
+}
+.upgrade {
+    float: right
+}
+.upgrade a {
+    color: #479de5
+}
+.upgrade a:hover {
+    color: #2476ba
+}
+.browser-photo-a {
+    padding-top: 10px;
+    padding-left: 15px;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 245px;
+}
+.browser-photo-b {
+    padding-top: 10px;
+    padding-left: 15px;
+    background-color: #eeeeee;
+    display: inline-block;
+    padding-bottom: 10px;
+    width: 245px;
+}
+.browser-image {
+    float: left
+}
+.control-wrap {
+    float: left;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+.print-controls {
+    display: block;
+    text-align: left;
+}
+.browser-options {
+    display: block;
+    padding-top: 10px;
+}
