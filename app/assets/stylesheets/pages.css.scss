@@ -491,7 +491,7 @@ h2 {
 }
 .drop {
     background: transparent;
-    padding: 5px;
+    padding: 0px 0px 0px 5px;
     font-size: 16px;
     line-height: 1;
     border: 0;
@@ -502,7 +502,7 @@ h2 {
 .options {
     float: right;
     padding-right: 5px;
-    padding-top: 6px;
+    padding-top: 3px;
 }
 #month-selector {
     clear: both;
@@ -512,6 +512,8 @@ h2 {
 }
 .drop-month {
     background-color: #f2f2f2;
+    -webkit-appearance: none;
+
     padding: 5px;
     padding-right: 20px;
     font-size: 16px;
