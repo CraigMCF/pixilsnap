@@ -51,9 +51,10 @@
 					</div>
 					
 					<div class="options">
-						<%= image_tag("delete.jpg", class: "icon") %>
-						<%= image_tag("duplicate-icon.png", class: "icon") %>
-						<%= image_tag("download-icon.png", class: "icon") %>
+						
+						<a href="#" title="delete" class="tooltip"><span title="More"><%= image_tag("delete.jpg", class: "icon") %></span></a>
+						<a href="#" title="duplicate" class="tooltip"><span title="More"><%= image_tag("duplicate-icon.png", class: "icon") %></span></a>
+						<a href="#" title="download" class="tooltip"><span title="More"><%= image_tag("download-icon.png", class: "icon") %></span></a>
 					</div>
 				
 				</div>
@@ -209,5 +210,6 @@
 	</div>
 	
 </div>	
+
 
  <%= render 'layouts/userFooter' %>
