@@ -4,9 +4,9 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   # After sign in direct to user page
-  def after_sign_in_path_for(resource)
-  	"/userPage"
-  end
+  #def after_sign_in_path_for(resource)
+  #	"/userPage"
+  #end
 
 end
 

@@ -22,5 +22,6 @@ module Pixilsnap
 
     # Required for Heroku (devise)
     config.assets.initialize_on_precompile = false
+    config.filter_parameters += [:password, :password_confirmation]
   end
 end

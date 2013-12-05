@@ -27,13 +27,20 @@
 	});
 	</script>
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  setTimeout(function(){
+		    $('.toast').fadeOut();
+		  }, 2500);
+		 })
+	</script>
+
 
 </head>
 <body>
 
-	<% flash.each do |name, msg| %>
-		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
-	<% end %>
+	
+
 	<%= yield %>
 
 </body>

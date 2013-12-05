@@ -647,3 +647,24 @@ h2 {
     display: block;
     padding-top: 10px;
 }
+
+.toast {
+    background-color: #fcf8e3;
+    display: inline-block;
+    width: 960px;
+    height: 25px;
+    color: #c09869;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-size: 17px;
+    font-family: 'bariol_boldbold';
+    border: 1px solid #fbeed5;
+}
+
+
+

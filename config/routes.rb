@@ -1,7 +1,13 @@
 Pixilsnap::Application.routes.draw do
   devise_for :users
-  root "pages#home"
-  get "userPage" => "pages#userPage"
+  authenticated do
+    root :to => 'pages#userPage', as: :authenticated
+  end
+
+  root :to => 'pages#home'
+
+  #root "pages#home"
+  #get "userPage" => "pages#userPage"
 
 
   

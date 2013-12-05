@@ -4,6 +4,10 @@
 <div id="userphotos-container">
 	
 	<div id="userphotos-content-container">
+
+		<% flash.each do |name, msg| %>
+		<div class="toast"><%= content_tag(:div, msg, class: "alert alert-#{name}") %></div>
+		<% end %>
 	
 		<div id="hello" class="medium bold">
 		
