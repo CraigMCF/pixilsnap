@@ -1,4 +1,6 @@
 Pixilsnap::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   authenticated do
     root :to => 'pages#userPage', as: :authenticated
